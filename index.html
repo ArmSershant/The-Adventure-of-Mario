@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mario</title>
+  </head>
+  <body>
+    <canvas
+      id="board"
+      width="1000"
+      height="600"
+      style="border: 4px solid black"
+    ></canvas>
+    <script src="/src/Tools.js" type="module"></script>
+    <script src="/src/Hero.js" type="module"></script>
+    <script src="/src/AntiHero.js" type="module"></script>
+    <script type="module">
+      import { Game } from "./src/Game.js"
+      let app = new Game()
+      app.play()
+    </script>
+  </body>
+</html>
